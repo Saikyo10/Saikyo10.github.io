@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+
+div.logo img{
+    padding-inline-start: 420px;
+}
+
+div.list{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+div.list ul li{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: franklin gothic medium; 
+    text-decoration: none;
+    padding-left: 110px;
+    padding-top: 10px;
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 100x;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+div.list ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+div.list ul li:hover{
+    color: yellow;
+}
+
+div.list ul li a:hover{
+    color: yellow;
+}
+
+div.content{
+    color: white;
+    padding: 20px;
+    font-family: Franklin Gothic Medium;
+}
+
+div.content ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom:40px
+}
+
+.gun{
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.multi p{
+    margin-left: 60px;
+    padding-left: 250px;
+    border-bottom: 2px solid yellow;
+    text-align: center;
+    text-align: justify;
+}
+
+.multi{
+    text-align: center;
+}
