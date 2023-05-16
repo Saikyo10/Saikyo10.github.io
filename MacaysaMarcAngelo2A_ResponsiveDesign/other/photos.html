@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden State Warriors</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="../index.html"><img src="../img/logo2.webp"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="">PLAYERS</a></li>
+                    <li><a href="stats.html">STATS</a></li>
+                    <li><a href="">PHOTOS</a></li>
+                
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="image-container">
+        <div class="images"><img src="../img/p1.jpg" alt=""></div>
+        <div class="images"><img src="../img/p2.jpeg" alt=""></div>
+        <div class="images"><img src="../img/p3.webp" alt=""></div>
+        <div class="images"><img src="../img/p4.jpg" alt=""></div>
+        <div class="images"><img src="../img/p5.webp" alt=""></div>
+        <div class="images"><img src="../img/p6.webp" alt=""></div>
+        <div class="images"><img src="../img/p7.jpg" alt=""></div>
+        <div class="images"><img src="../img/p8.webp" alt=""></div>
+        <div class="images"><img src="../img/p9.webp" alt=""></div>
+        <div class="images"><img src="../img/p10.jpg" alt=""></div>
+        <div class="images"><img src="../img/p11.jpg" alt=""></div>
+        <div class="images"><img src="../img/p12.jpg" alt=""></div>
+        <div class="images"><img src="../img/p13.jpg" alt=""></div>
+        <div class="images"><img src="../img/p14.jpg" alt=""></div>
+        <div class="images"><img src="../img/p15.jpg" alt=""></div>
+    </div>
+
+    <div class="popup">
+        <span>&times;</span>
+        <img src="../img/p1.jpg" alt="">
+    </div>
+
+</section>
+
+<!----java added---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    document.querySelectorAll('.image-container img').forEach(images =>{
+        images.onclick = () => {
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = images.getAttribute('src');
+        }
+    });
+
+    document.querySelector('.popup span').onclick = () =>{
+        document.querySelector('.popup').style.display = 'none';
+    }
+</script>
+
+<section class="abt">
+    <div class="about" id="About">
+        <h1>About:</h1>
+        <p>This webpage contains information about the Golden State Warriors. I'm a fan of the Warriors that is why I created a website
+            about my favorite NBA team.<br> I been a fan since their first championship back in 2015 where Stephen Curry also won his 
+            first MVP award.And since then, I have been supporting that team <br>through their ups and downs. In the span of 8 years, they 
+            have won 4 championships in 6 NBA Finals appearances.
+        </p>
+    </div> 
+</section>
+
+<footer>
+    <p> Copyright &copy; 2023 NBA Media Ventures, LLC. All Rights Reserved.  
+    </p>
+</footer>
+
+</body>
+</html>

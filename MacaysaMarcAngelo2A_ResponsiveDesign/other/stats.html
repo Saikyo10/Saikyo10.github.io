@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden State Warriors</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="../index.html"><img src="../img/logo2.webp"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="">PLAYERS</a></li>
+                    <li><a href="">STATS</a></li>
+                    <li><a href="photos.html">PHOTOS</a></li>
+                
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>Golden State Warriors</h1>
+        <p>Golden State Warriors, American professional basketball team based in San Francisco that
+            plays in the<br> Western Conference of the National Basketball Association(NBA).The Warriors
+            have won six NBA championships<br> and one Basketball Association of America (BAA) title.
+        </p>
+
+        <a href="#stats" class="stat_link"><h2>Click to see Stats</h2></a>
+    </div>  
+    
+
+</section>
+
+<!------players------>
+
+<section class="players" id="stats">
+    <h1>Player Stats</h1>
+    <p>Stats for the starting 5 players of the Golden State Warriors 2022-2023</p>
+
+    <div class="row">
+        <div class="player-col">
+            <img src="../img/30.jpg" width="130px">
+            <h3>Stephen Curry #30</h3>
+            <p><b>MPG:</b> 34.7</p>
+            <p><b>PPG:</b> 29.4</p>
+            <p><b>APG:</b> 6.3</p>
+            <p><b>RPG:</b> 6.1</p>
+            <p><b>FG%:</b> 49.3%</p>
+            <p><b>3FG:</b> 42.7%</p>
+            <p><b>FT%:</b> 91.5%</p>
+        </div>
+        <div class="player-col">
+            <img src="../img/11.jpg" width="130px">
+            <h3>Klay Thompson #11</h3>
+            <p><b>MPG:</b> 33.0</p>
+            <p><b>PPG:</b> 21.9</p>
+            <p><b>APG:</b> 2.4</p>
+            <p><b>RPG:</b> 401</p>
+            <p><b>FG%:</b> 43.6%</p>
+            <p><b>3FG:</b> 41.2%</p>
+            <p><b>FT%:</b> 87.9%</p>
+        </div>
+        <div class="player-col">
+            <img src="../img/22.jpg" width="130px">
+            <h3>Andrew Wiggins #22</h3>
+            <p><b>MPG:</b> 32.2</p>
+            <p><b>PPG:</b> 17.1</p>
+            <p><b>APG:</b> 2.3</p>
+            <p><b>RPG:</b> 5.0</p>
+            <p><b>FG%:</b> 47.3%</p>
+            <p><b>3FG:</b> 39.6%</p>
+            <p><b>FT%:</b> 61.1%</p>
+        </div>
+        <div class="player-col">
+            <img src="../img/23.jpg" width="130px">
+            <h3>Draymond Green #23</h3>
+            <p><b>MPG:</b> 31.5</p>
+            <p><b>PPG:</b> 8.5</p>
+            <p><b>APG:</b> 6.8</p>
+            <p><b>RPG:</b> 7.2</p>
+            <p><b>FG%:</b> 52.7%</p>
+            <p><b>3FG:</b> 30.5%</p>
+            <p><b>FT%:</b> 71.3%</p>
+        </div>
+        <div class="player-col">
+            <img src="../img/5.jpg" width="130px">
+            <h3>Kevon Looney #5</h3>
+            <p><b>MPG:</b> 23.9</p>
+            <p><b>PPG:</b> 5.1</p>
+            <p><b>APG:</b> 2.5</p>
+            <p><b>RPG:</b> 9.3</p>
+            <p><b>FG%:</b> 63.0%</p>
+            <p><b>3FG:</b> 0.0</p>
+            <p><b>FT%:</b> 60.6%</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="abt">
+    <div class="about" id="About">
+        <h1>About:</h1>
+        <p>This webpage contains information about the Golden State Warriors. I'm a fan of the Warriors that is why I created a website
+            about my favorite NBA team.<br> I been a fan since their first championship back in 2015 where Stephen Curry also won his 
+            first MVP award.And since then, I have been supporting that team <br>through their ups and downs. In the span of 8 years, they 
+            have won 4 championships in 6 NBA Finals appearances.
+        </p>
+    </div> 
+</section>
+
+<!----java added---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<footer>
+    <p> Copyright &copy; 2023 NBA Media Ventures, LLC. All Rights Reserved.  
+    </p>
+</footer>
+
+</body>
+</html>

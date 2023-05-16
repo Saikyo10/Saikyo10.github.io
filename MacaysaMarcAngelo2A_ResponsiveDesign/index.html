@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden State Warriors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="img/logo2.webp"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Players">PLAYERS</a></li>
+                    <li><a href="other/stats.html">STATS</a></li>
+                    <li><a href="other/photos.html">PHOTOS</a></li>
+                
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Golden State Warriors</h1>
+    <p>Golden State Warriors, American professional basketball team based in San Francisco that
+        plays in the<br> Western Conference of the National Basketball Association(NBA).The Warriors
+        have won six NBA championships<br> and one Basketball Association of America (BAA) title.
+    </p>
+</div>    
+
+</section>
+
+<!------players------>
+
+<section class="players" id="Players">
+    <h1>Roster</h1>
+    <p>Starting 5 for the Golden State Warriors 2022-2023</p>
+
+    <div class="row">
+        <div class="player-col">
+            <img src="img/30.jpg" width="130px">
+            <h3>Stephen Curry</h3>
+            <p><b>Position:</b> Point Guard</p>
+            <p><b>Number:</b> 30</p>
+            <p><b>Height:</b> 6'3</p>
+            <p><b>Weight:</b> 198</p>
+        </div>
+        <div class="player-col">
+            <img src="img/11.jpg" width="130px">
+            <h3>Klay Thompson</h3>
+            <p><b>Position:</b> Shooting Guard</p>
+            <p><b>Number:</b> 11</p>
+            <p><b>Height:</b> 6'6</p>
+            <p><b>Weight:</b> 210</p>
+        </div>
+        <div class="player-col">
+            <img src="img/22.jpg" width="130px">
+            <h3>Andrew Wiggins</h3>
+            <p><b>Position:</b> Small Forward</p>
+            <p><b>Number:</b> 22</p>
+            <p><b>Height:</b> 6'7</p>
+            <p><b>Weight:</b> 203</p>
+        </div>
+        <div class="player-col">
+            <img src="img/23.jpg" width="130px">
+            <h3>Draymond Green</h3>
+            <p><b>Position:</b> Power Forward</p>
+            <p><b>Number:</b> 23</p>
+            <p><b>Height:</b> 6'6</p>
+            <p><b>Weight:</b> 234</p>
+        </div>
+        <div class="player-col">
+            <img src="img/5.jpg" width="130px">
+            <h3>Kevon Looney</h3>
+            <p><b>Position:</b> Center</p>
+            <p><b>Number:</b> 5</p>
+            <p><b>Height:</b> 6'9</p>
+            <p><b>Weight:</b> 249</p>
+        </div>
+    </div>
+
+</section>
+
+<!----java added---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<section class="abt">
+    <div class="about" id="About">
+        <h1>About:</h1>
+        <p>This webpage contains information about the Golden State Warriors. I'm a fan of the Warriors that is why I created a website
+            about my favorite NBA team.<br> I been a fan since their first championship back in 2015 where Stephen Curry also won his 
+            first MVP award.And since then, I have been supporting that team <br>through their ups and downs. In the span of 8 years, they 
+            have won 4 championships in 6 NBA Finals appearances.
+        </p>
+    </div> 
+</section>
+
+<footer>
+    <p> Copyright &copy; 2023 NBA Media Ventures, LLC. All Rights Reserved.  
+    </p>
+</footer>
+
+</body>
+</html>
